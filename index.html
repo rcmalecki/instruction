@@ -11,44 +11,24 @@
                 font-size:18px;
             }
         </style>
+
     </head>
-    <body>
+    <body onload="alert('Our body has loaded.');">
         <header>
-            <h1>Talking about the DOM.</h1>
+            <h1>Body onLoad.</h1>
         </header>
         <main>  
             <section>
             
-                <h2>Let's write some Lorem Ipsum.</h2>
-                <ul>
-                    <li>
-                        <span>Lorem Ipsum.</span>
-                    </li>
-                    <li>
-                        <span>Lorem Ipsum.</span>
-                    </li>
-                    <li>
-                        <span>Lorem Ipsum.</span>
-                    </li>
-                    <li>
-                        <span>Lorem Ipsum.</span>
-                    </li>
-                    <li>
-                        <span>Lorem Ipsum.</span>
-                    </li>
-                    <li>
-                        <p>We can attach an event listener to <a href="#" id="ourLink">this link</a>!</p>
-                    </li>
-                </ul>
+                <p id="ourParagraph">What's up.</p>
             </section>
         </main>
         <footer>
-            <p style="display:none;">That was great!</p>
+            
         </footer>
-        <script type="text/javascript" src="js/main.js"></script>
-        <script type="text/javascript">
-
-
+         <script type="text/javascript">
+            console.log(document.body);
+            console.log(document.getElementById('ourParagraph'));
         </script>
 
     </body>
