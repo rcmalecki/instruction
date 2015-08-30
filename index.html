@@ -10,26 +10,51 @@
             ol li, ul li{
                 font-size:18px;
             }
+            #ourDiv{
+                height:100px;
+                width:100px;
+                background-color:red;
+            }
         </style>
 
     </head>
-    <body onload="alert('Our body has loaded.');">
+    <body>
         <header>
-            <h1>Body onLoad.</h1>
+            <h1>Mouse Events.</h1>
         </header>
         <main>  
             <section>
             
-                <p id="ourParagraph">What's up.</p>
+                <a href="#awesomeHREF" class="awesomeClass" id="ourLink">
+                    What's up.
+                </a>
+                <br/>
+                <br/>
+                <br/>
+                <div id="ourDiv" onmouseenter="alert('What are you entering me for?')"></div>
+
             </section>
         </main>
         <footer>
             
         </footer>
-         <script type="text/javascript">
-            console.log(document.body);
-            console.log(document.getElementById('ourParagraph'));
-        </script>
+        <script type="text/javascript">
+            var ourLink = document.getElementById('ourLink');
 
+            var ourFunction = function(){
+                alert('What are you clicking me for?');
+            };
+
+            ourLink.addEventListener('click',ourFunction);
+
+            // var ourDiv = document.getElementById('ourDiv');
+
+            // var ourFunction = function(){
+            //     alert('What are you entering me for?');
+            // };
+
+            // ourDiv.addEventListener('mouseenter', ourFunction);
+
+        </script>
     </body>
 </html>
